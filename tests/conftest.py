@@ -1,7 +1,7 @@
 import pytest
 import selenium.webdriver
 
-@pytest.fixture
+@pytest.fixture(scope='session')
 def browser():
 
     #Initialize the ChromeDriver Instance
@@ -11,7 +11,7 @@ def browser():
     b.implicitly_wait(10)
     
     # Return the WebDriver instance for the setup
-    yield browser
+    yield b
     
     # Quit the WebDriver instance for the cleanup
     b.quit()

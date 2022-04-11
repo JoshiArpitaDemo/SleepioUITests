@@ -5,11 +5,11 @@ class SleepioLandingPage:
 
   #URL
   
-  URL = "https://onboarding.sleepio.com/sleepio/big-health#1/1"
+  URL = 'https://onboarding.sleepio.com/sleepio/big-health#1/1'
 
   #Locators
 
-  GETSTARTED_BUTTON = (By.CSS_SELECTOR, "button.s1-button s1-button--blue")
+  GETSTARTED_BUTTON = (By.CSS_SELECTOR, 'button.sl-button')
 
   #Initializer
 
@@ -20,6 +20,6 @@ class SleepioLandingPage:
   def load(self):
     self.browser.get(self.URL)
 
-  def click(self, phrase):
+  def click(self):
     search_get_started = self.browser.find_element(*self.GETSTARTED_BUTTON)
     search_get_started.click()
