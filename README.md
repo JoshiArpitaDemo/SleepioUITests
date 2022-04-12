@@ -5,8 +5,8 @@ Currently, only have the tests steps directly without feature files. Have BDD st
 
 To run the tests run the following commands:
 
-pipenv run python -m pytest -k landing -v
-pipenv run python -m pytest -k improveyoursleep -v
-pipenv run python -m pytest -k howlongproblemwithsleep -v
-pipenv run python -m pytest -k whatstopsfromsleepingmostoften -v
-pipenv run python -m pytest -k whatextent -v
+pipenv run python -m pytest -k landing -v <br />
+pipenv run python -m pytest -k improveyoursleep -v <br />
+pipenv run python -m pytest -k howlongproblemwithsleep -v <br />
+pipenv run python -m pytest -k whatstopsfromsleepingmostoften -v <br />
+pipenv run python -m pytest -k whatextent -v <br />
