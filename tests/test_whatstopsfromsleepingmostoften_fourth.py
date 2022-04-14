@@ -21,23 +21,17 @@ def test_navigation_from_whatstopsfromsleepingmostoften_page(browser):
 #Given the `Which of the following stops you from sleeping most often?` page
      initial_page.load_improvesleeppage()
      landing_page.click()
-     time.sleep(5)
      initial_page.check_multiple_options()
      initial_page.click_continue()
      problemwithsleep_page.dropdown_selections()
      problemwithsleep_page.continue_click()
-     time.sleep(10)
 
 
 #When I select the first option
      whatstopsfromsleeping_page.select_first_radio_button()
-     #time.sleep(10)
-
-
 
 #And I select the second option
      whatstopsfromsleeping_page.select_the_second_radio_button()
-     #time.sleep(10)
 
 #Then the first option greys out
      whatstopsfromsleeping_page.the_first_option_greysout()

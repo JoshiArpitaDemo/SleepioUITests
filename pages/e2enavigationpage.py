@@ -85,7 +85,7 @@ class MultipleScreenPages:
       last_name = self.browser.find_element(*self.LAST_NAME)
       last_name.send_keys("USER")
       email = self.browser.find_element(*self.EMAIL)
-      email.send_keys("tstuser4@gmail.com")
+      email.send_keys("tstuser5@gmail.com")
       password = self.browser.find_element(*self.PASSWORD)
       password.send_keys("AtSJwin98$11")
       click_the_checkbox = self.browser.find_element(*self.FIRST_CHECKBOX)

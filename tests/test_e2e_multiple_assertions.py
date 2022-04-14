@@ -9,10 +9,10 @@ from pages.getstarted import SleepioLandingPage
 from pages.howlongproblemwithsleeppage import HowLongProblemWithSleepPage
 from pages.sleepingmostoftenquestionpage import WhatStopsFromSleepingMostOftenPage
 from pages.prequeswhatextentpage import WhatExtentPastMonthPage
-from pages.whatextenttoemploymentscreenpage import MultipleScreenPages
+from pages.e2enavigationpage import MultipleScreenPages
 
 @pytest.mark.usefixtures("browser")
-def test_navigation_from_whatextentscreen_to_employmentscreen(browser):
+def test_e2e(browser):
      initial_page = SleepScoreHowWouldYouLikeToImproveYourSleepPage(browser)
      landing_page = SleepioLandingPage(browser)
      problemwithsleep_page = HowLongProblemWithSleepPage(browser)
